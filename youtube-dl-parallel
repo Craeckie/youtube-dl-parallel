@@ -90,7 +90,7 @@ function find_longest_title() {
 }
 
 function create_title_directory() {
-    mktemp -d -t youtube-dl-parallel.XXX || error "mktemp failed"
+    mktemp -d -t youtube-dl-parallel.XXXXXX || error "mktemp failed"
 }
 
 function parallel_will_cite_option() {
